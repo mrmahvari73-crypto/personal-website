@@ -25,7 +25,7 @@ To provide a quick introduction to my background, areas of work and selected pro
 
 ## Live Website
 
-[mrmahvari73-crypto.github.io/personal-website](https://mrmahvari73-crypto.github.io/personal-website/)
+[mrmahvari.github.io/personal-website](https://mrmahvari.github.io/personal-website/)
 
 ## Maintenance
 
