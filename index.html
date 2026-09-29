@@ -67,15 +67,9 @@
     .button-outline{border-color:#708090;color:#f1f5f8}
     .button-outline:hover{background:#ffffff09}
     .arrow{font-size:19px;line-height:1;font-weight:400}
-    .identity{background:#182c34;border:1px solid #b7ef7233;border-radius:24px;padding:30px;position:relative;min-height:430px;display:flex;flex-direction:column;justify-content:space-between;isolation:isolate;overflow:hidden}
-    .identity::before{content:"";position:absolute;width:360px;height:360px;right:-120px;top:-140px;border:1px solid #b7ef722b;border-radius:50%;z-index:-1}
-    .identity::after{content:"";position:absolute;width:360px;height:360px;left:-150px;bottom:-165px;border:1px solid #b7ef7226;border-radius:50%;z-index:-1}
-    .identity-top{display:flex;justify-content:space-between;gap:15px;color:#c4d3d0;font-size:12px;letter-spacing:.13em}
-    .identity-symbol{font-size:11px;color:var(--green);letter-spacing:4px}
-    .monogram{text-align:center;font-family:Georgia,"Times New Roman",serif;font-size:clamp(6.5rem,12vw,10rem);font-weight:400;letter-spacing:-.035em;line-height:1.25;color:var(--green);padding:15px 10px 30px 0}
-    .identity-bottom{padding-top:20px;border-top:1px solid #b7ef7238;display:flex;justify-content:space-between;gap:14px;align-items:end}
-    .identity-bottom p{font-size:16px;line-height:1.65;margin:0;color:#e3eee7}
-    .identity-bottom .tiny{color:#c1d0c9;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+    .identity{margin:0;background:#f5f6f5;border:1px solid #b7ef7233;border-radius:24px;position:relative;width:100%;aspect-ratio:1.12;overflow:hidden;isolation:isolate}
+    .hero-portrait{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 0;transform:scale(1.38);transform-origin:50% 0}
+    .portrait-monogram{position:absolute;left:20px;bottom:20px;display:grid;place-items:center;width:42px;height:42px;border:1px solid #b7ef724d;border-radius:10px;background:var(--navy);color:var(--green);font-family:Georgia,"Times New Roman",serif;font-size:19px;line-height:1;letter-spacing:-1px}
     .hero-foot{margin-top:64px;padding-top:24px;border-top:1px solid #ffffff1b;display:flex;align-items:center;justify-content:space-between;gap:24px;color:#a7b6c2;font-size:14px}
     .hero-foot p{margin:0}.hero-foot strong{color:#e7edf1;font-weight:500}
     .section{padding:93px 0}
@@ -121,9 +115,9 @@
     footer{border-top:1px solid #ffffff24;padding-top:26px;display:flex;align-items:center;justify-content:space-between;gap:24px;color:#aab8c3;font-size:13px;line-height:1.6}
     footer p{margin:0}footer a{min-height:44px;display:inline-flex;align-items:center;gap:12px;color:#d6e0e6;font-size:14px}
     @media(min-width:1450px){.hero{padding-top:112px;padding-bottom:78px}}
-    @media(max-width:1000px){.wrap{width:calc(100% - 64px)}.hero-grid{gap:38px;grid-template-columns:1.2fr 1fr}.hero{padding-top:64px}.identity{padding:24px;min-height:360px}.about-grid{gap:48px}.expertise-grid{gap:0 36px}.contact-top{gap:42px}nav{gap:24px}.roles .separator{margin-inline:5px}}
-    @media(max-width:760px){html{scroll-padding-top:24px}.wrap{width:calc(100% - 40px)}.nav-inner{min-height:80px;flex-wrap:wrap;gap:6px;padding:16px 0}.brand{font-size:14px}nav{gap:4px 18px;width:100%;justify-content:flex-start;flex-wrap:wrap}nav a{font-size:14px}.hero{padding:42px 0 30px}.hero-grid{grid-template-columns:1fr;gap:38px}.eyebrow{margin-bottom:20px}h1{font-size:clamp(2.8rem,10.5vw,4.2rem)}.roles{font-size:16px;margin-bottom:17px}.hero-description{font-size:17px;max-width:580px}.button{font-size:14px;padding:12px 18px;gap:14px}.identity{min-height:310px;width:100%;max-width:510px;margin-inline:auto;padding:24px}.monogram{font-size:116px;padding-bottom:22px}.identity-bottom p{font-size:15px}.hero-foot{margin-top:35px;padding-top:23px;flex-direction:column;align-items:start;gap:8px}.section{padding:61px 0}.about-grid{grid-template-columns:1fr;gap:30px}.about-grid h2{max-width:440px}.education{margin-top:26px}.about-copy p{font-size:17px}.section-heading{align-items:start;flex-direction:column;gap:18px;margin-bottom:32px}.section-heading p{max-width:550px}.expertise-grid{grid-template-columns:1fr}.expertise-item{padding-block:26px}.expertise-item:last-child{padding-bottom:0}summary{grid-template-columns:25px 1fr 36px;gap:14px;padding:24px 0}.work-title{font-size:20px}.work-tag{grid-column:2;grid-row:2;font-size:12px}.expand{grid-column:3;grid-row:1 / span 2}.work-body{padding:0 10px 27px 39px;grid-template-columns:1fr;gap:20px}.contact{padding:60px 0 25px}.contact-top{grid-template-columns:1fr;gap:28px;padding-bottom:42px}.contact h2{font-size:42px}.contact-copy p{font-size:17px;max-width:560px}footer{align-items:start;gap:15px;flex-direction:column}}
-    @media(max-width:370px){.wrap{width:calc(100% - 32px)}nav{gap:12px}.button-row{align-items:stretch;flex-direction:column}.button{width:100%}.roles .separator{margin-inline:3px}.identity{padding:20px}.identity-top{font-size:11px}.contact h2{font-size:36px}}
+    @media(max-width:1000px){.wrap{width:calc(100% - 64px)}.hero-grid{gap:38px;grid-template-columns:1.2fr 1fr}.hero{padding-top:64px}.about-grid{gap:48px}.expertise-grid{gap:0 36px}.contact-top{gap:42px}nav{gap:24px}.roles .separator{margin-inline:5px}}
+    @media(max-width:760px){html{scroll-padding-top:24px}.wrap{width:calc(100% - 40px)}.nav-inner{min-height:80px;flex-wrap:wrap;gap:6px;padding:16px 0}.brand{font-size:14px}nav{gap:4px 18px;width:100%;justify-content:flex-start;flex-wrap:wrap}nav a{font-size:14px}.hero{padding:42px 0 30px}.hero-grid{grid-template-columns:1fr;gap:38px}.eyebrow{margin-bottom:20px}h1{font-size:clamp(2.8rem,10.5vw,4.2rem)}.roles{font-size:16px;margin-bottom:17px}.hero-description{font-size:17px;max-width:580px}.button{font-size:14px;padding:12px 18px;gap:14px}.identity{max-width:510px;margin-inline:auto}.hero-foot{margin-top:35px;padding-top:23px;flex-direction:column;align-items:start;gap:8px}.section{padding:61px 0}.about-grid{grid-template-columns:1fr;gap:30px}.about-grid h2{max-width:440px}.education{margin-top:26px}.about-copy p{font-size:17px}.section-heading{align-items:start;flex-direction:column;gap:18px;margin-bottom:32px}.section-heading p{max-width:550px}.expertise-grid{grid-template-columns:1fr}.expertise-item{padding-block:26px}.expertise-item:last-child{padding-bottom:0}summary{grid-template-columns:25px 1fr 36px;gap:14px;padding:24px 0}.work-title{font-size:20px}.work-tag{grid-column:2;grid-row:2;font-size:12px}.expand{grid-column:3;grid-row:1 / span 2}.work-body{padding:0 10px 27px 39px;grid-template-columns:1fr;gap:20px}.contact{padding:60px 0 25px}.contact-top{grid-template-columns:1fr;gap:28px;padding-bottom:42px}.contact h2{font-size:42px}.contact-copy p{font-size:17px;max-width:560px}footer{align-items:start;gap:15px;flex-direction:column}}
+    @media(max-width:370px){.wrap{width:calc(100% - 32px)}nav{gap:12px}.button-row{align-items:stretch;flex-direction:column}.button{width:100%}.roles .separator{margin-inline:3px}.portrait-monogram{left:16px;bottom:16px}.contact h2{font-size:36px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
     @media print{.site-header,footer .back-top,.button-row{display:none}.dark,.contact{background:#fff!important;color:#152432!important}.wrap{width:100%}.hero,.section,.contact{padding:24px 0}.identity{display:none}.hero-grid{display:block}.hero-description,.roles,.hero-foot,.contact-copy p{color:#35434c!important}h1 .surname{color:#152432}.contact-link{color:#152432}.section{break-inside:avoid}.hero-foot{margin-top:20px}.work-body{display:block}a[href^="https://www.linkedin"]::after{content:" (linkedin.com/in/mohamadrezamahvari)";font-size:12px}}
   </style>
@@ -157,11 +151,10 @@
                 <a class="button button-outline" href="#work">Explore my work <span class="arrow" aria-hidden="true">↓</span></a>
               </div>
             </div>
-            <div class="identity" role="img" aria-label="MM monogram. A focus on people, informed by data.">
-              <div class="identity-top" aria-hidden="true"><span>A HUMAN PERSPECTIVE</span><span class="identity-symbol">＋</span></div>
-              <div class="monogram" aria-hidden="true">MM</div>
-              <div class="identity-bottom" aria-hidden="true"><p>People at the center.<br>Evidence in the decisions.</p><span class="tiny">EX · DATA · AI</span></div>
-            </div>
+            <figure class="identity">
+              <img class="hero-portrait" src="assets/mohamad-reza-mahvari-portrait.webp" width="1122" height="1402" alt="Mohamad Reza Mahvari wearing a dark suit and white shirt against a light background" fetchpriority="high" decoding="async">
+              <span class="portrait-monogram" aria-hidden="true">MM</span>
+            </figure>
           </div>
           <div class="hero-foot"><p><strong>Employee Experience Specialist · Hamrah Aval (MCI)</strong></p><p>From employee voice to insight, action and follow-through.</p></div>
         </div>
