@@ -25,7 +25,7 @@ To provide a quick introduction to my background, areas of work and selected pro
 
 ## Live Website
 
-[mrmahvari.github.io/personal-website](https://mrmahvari.github.io/personal-website/)
+[mrmahvari.github.io](https://mrmahvari.github.io/)
 
 ## Maintenance
 
